@@ -1,0 +1,149 @@
+/* === GLOBAL STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* === RESPONSIVE SECTION === */
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* === QUIZ SECTION === */
+#quiz-container {
+  position: relative;
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  text-align: left;
+  padding: 12px 15px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.option-btn:hover {
+  background-color: #d6eaf8;
+  border-color: #3498db;
+}
+
+.option-btn.selected {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+#quiz-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+#result-container {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* === API SECTION === */
+#api-data-container {
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  margin-top: 20px;
+  min-height: 100px;
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 900px) {
+  .responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 20px 15px;
+  }
+
+  #quiz-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

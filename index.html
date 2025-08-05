@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Web Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- RESPONSIVE SECTION -->
+    <section id="responsive-section">
+      <h1><center>Advanced Styling and JavaScript</center></h1>
+      
+    </section>
+
+    <!-- QUIZ SECTION -->
+    <section id="quiz-section">
+      <h1>Interactive Quiz</h1>
+      <div id="quiz-container">
+        <div id="question-container">
+          <h2 id="question-text">Question goes here</h2>
+        </div>
+        <div id="options-container">
+          <!-- Options will be added by JavaScript -->
+        </div>
+        <div id="quiz-controls">
+          <button id="prev-btn" disabled>Previous</button>
+          <span id="progress">Question 1 of 5</span>
+          <button id="next-btn">Next</button>
+        </div>
+        <button id="submit-btn" style="display: none;">Submit Quiz</button>
+        <div id="result-container">
+          <h2>Your Score: <span id="score">0</span>/<span id="total-questions">5</span></h2>
+          <button id="restart-btn">Restart Quiz</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- API SECTION -->
+    <section id="api-section">
+      <h1>API Data Fetching</h1>
+      <button id="fetch-joke-btn">Get Random Joke</button>
+      <button id="fetch-catfact-btn">Get Cat Fact</button>
+      <div id="api-data-container">
+        <p>API data will appear here...</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
